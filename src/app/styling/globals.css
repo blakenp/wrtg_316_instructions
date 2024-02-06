@@ -54,6 +54,8 @@ li {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 40px;
     min-height: 70vh;
     max-width: 700px;
 }

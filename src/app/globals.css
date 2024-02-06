@@ -1,19 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Nunito+Sans:opsz@6..12&display=swap');
 
 * {
     font-family: 'Kalam', cursive;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-width: 375px;
     align-items: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    align-items: center;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 15px;
+    margin-top: 0.5em;
+}
+  
+li {
+    margin-bottom: 5px; /* Add spacing between items */
 }
 
 .div-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    flex-direction: column;
+    min-height: 70vh;
+    max-width: 700px;
 }

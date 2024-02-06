@@ -1,0 +1,38 @@
+.sitetitle {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.activeNavLink,
+.navLink {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.activeNavLink {
+    border-bottom: 4px solid #fff;
+    font-size: 15px;
+}

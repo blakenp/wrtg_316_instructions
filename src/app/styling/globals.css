@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Nunito+Sans:opsz@6..12&display=swap');
+
+* {
+    font-family: 'Kalam', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 1em;
+}
+
+p.note {
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 15px;
+    margin-top: 0.5em;
+}
+  
+li {
+    margin-bottom: 5px;
+}
+
+.div-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    min-height: 70vh;
+    max-width: 700px;
+}
+
+.Image {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    max-width: 700px;
+    border-radius: 5px;
+    border: 1px solid rgb(164, 164, 164);
+}
+
+.hazard-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid rgb(164, 164, 164);
+    padding: 1em;
+    background-color: yellow;
+}
+
+.hazard-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.hazard-icon {
+    height: 50px;
+    color: black;
+    align-self: flex-start;
+    margin-right: 1em;
+}

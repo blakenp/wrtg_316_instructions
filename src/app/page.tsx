@@ -1,112 +1,264 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+    <main>
+      <div className="div-container">
+        <h1>How To Create a Bar Graph in Python</h1>
+        <p>
+          The ability to create graphs that communicate data is one of the most
+          important tools for a data scientist to have.
+          These instructions will walk you through the process, step by step,
+          until you feel confident creating a simple bar graph in Python!
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+        <h3>Materials:</h3>
+        <ul>
+          <li>Computer (Provided)</li>
+          <li>Google Colab (Provided)</li>
+          <li>A data set (Provided)</li>
+          <li>Hands to type</li>
+        </ul>
+        <h2>Step 1: Create a Code Chunk</h2>
+        <p>
+          In Google Colab, click the +Code button in the top left corner to create a code chunk.
+          Throughout these instructions, when asked to create
+          a code chunk you will click this button.
+        </p>
+        <Image 
+          src={"/add_code_button.png"}
+          width={700}
+          height={370}
+          alt="Add Code Button"
+          priority={true}
+          quality={100}
+          className="Image"
         />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+        <p className="note">
+          Note: Another option for creating a code chunk is to use the keyboard shortcut Shift+Enter.
+          This will run your code and create a new chunk automatically for you.
+        </p>
+        <h2>Step 2: Import Packages</h2>
+        <p>
+          In your newly created code chunk, 
+          type the following commands to import the packages we"ll be using.
+        </p>
+        <p className="note">
+          Note: In Python, a package is a useful collection of functions that 
+          we are available to use in our programs. 
+          We will import some packages to make our coding process easier.
+        </p>
+        <Image 
+          src={"/required_packages.png"}
+          width={700}
+          height={95}
+          alt="Required Python Packages"
+          quality={100}
+          className="Image"
+        />
+        <p>
+          Press the play button next to your chunk of code, 
+          and watch as Colab executes your commands.
+        </p>
+        <p className="note">
+          Note: If your code has run successfully, 
+          a check mark will appear next to it. 
+          If there are errors, check your code for typos, 
+          or skip to the end to read the troubleshooting section.
+        </p>
+        <div className="hazard-container">
+          <div className="hazard-title">    
+            <FontAwesomeIcon icon={faExclamationTriangle} className="hazard-icon"/>
+            <h3>
+              Caution
+            </h3>
+          </div>
+          <p>
+            Throughout these instructions,
+            <b> the code must be written exactly as shown</b>, 
+            including punctuation, spacing, and indents. Otherwise, you will get 
+            error messages and your code will not work.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        </div>
+        <h2>Step 3: Import Some Data</h2>
+        <p>
+          Add a new code chunk (using the +Code button or Shift+Enter). 
+          Type the following to <b>import and name the data</b>, and click play to run the code.
+        </p>
+        <Image
+          src={"/df_initialization.png"}
+          width={700}
+          height={64}
+          alt="DF Initialization"
+          quality={100}
+          className="Image"
+        />
+        <p className="note">
+          Note: In Python, you can assign the data whatever name you'd like,
+          but we are using hp_df to denote Harry Potter Data Frame.
+        </p>
+        <h2>Step 4: Check the Data</h2>
+        <p>
+          In a new code chunk, 
+          <b> ensure that the data was imported correctly</b> using this command, and click play.
+        </p>
+        <Image
+          src="/display_dataframe.png"
+          width={700}
+          height={80}
+          alt="Display Dataframe"
+          quality={100}
+          className="Image"
+        />
+        <p>
+          This table showing the first few rows of your data should appear:
+        </p>
+        <Image
+          src={"/df_table.png"}
+          width={700}
+          height={150}
+          alt="DF Table"
+          unoptimized
+          priority={true}
+          quality={100}
+          className="Image"
+        />
+        <p className="note">
+          Note: You might be confused as to why we used () in our code. 
+          It may seem unnecessary, but whenever we enter a function, 
+          Python needs parentheses to recognize it. 
+        </p>
+        <h2>Step 5: Calculate The Percentages</h2>
+        <p>
+          In a new code chunk, use these commands to <b>calculate the percentages</b> of
+          how many people listed each character as their favorite. Click play.
+        </p>
+        <Image
+          src={"/percentages_calc.png"}
+          width={700}
+          height={150}
+          alt="Percentages Calc"
+          priority={true}
+          quality={100}
+          className="Image"
+        />
+        <p className="note">
+          Note: These lines of code first count how many people listed each 
+          character as their favorite, and then convert these counts into percentages. 
+          You may notice that the British spelling of the word favorite <b>("favourite")</b> is used. 
+          This is because the dataset we imported is British, 
+          and this code specifically refers Python to a part of that dataset.
+        </p>
+        <p>
+          Python should return these data entries: 
+        </p>
+        <Image
+          src={"/percentages_display.png"}
+          width={700}
+          height={170}
+          alt="Percentages Display"
+          priority={true}
+          quality={100}
+          className="Image"
+        />
+        <h2>Step 6: Create the Bar Chart</h2>
+        <p>
+          In a new code chunk, type these lines of code to <b>create the desired bar chart</b>. Click play.
+        </p>
+        <Image
+          src={"/plotting_logic.png"}
+          width={700}
+          height={100}
+          alt="Plotting Logic"
+          quality={100}
+          className="Image"
+        />
+        <p>
+          If you do this step correctly, you should get an image like this:
+        </p>
+        <Image
+          src={"/plot_display1.png"}
+          width={700}
+          height={400}
+          alt="Plot 1"
+          quality={100}
+          className="Image"
+        />
+        <p className="note">
+          Note: This code tells Python what kind of graph to make, and how big to make it. 
+        </p>
+        <h2>Step 7: Label Your Graph</h2>
+        <p>
+          In the <b>SAME</b> code chunk, add the following commands (highlighted in yellow)
+          to <b>create labels on your graph</b>. Click play.
+        </p>
+        <Image
+          src={"/plt_labeling.png"}
+          width={700}
+          height={200}
+          alt="Plot 1"
+          priority={true}
+          quality={100}
+          className="Image"
+        />
+        <p>
+          You are all done! The final product should look something like this:
+        </p>
+        <Image
+          src={"/plot_display2.png"}
+          width={700}
+          height={400}
+          alt="Plot 2"
+          quality={100}
+          className="Image"
+        />
+        <p className="note">
+          Note: You can choose whatever color you like for your graph! 
+          Try typing the name of a different color in the color='' space (line 2 of the code).
+          If you choose a color that Python doesn't recognize, 
+          it will give you an error message when you click play. 
+          You also may notice that we used the American spelling of favorite here. 
+          We can make the titles whatever we want, and we're assuming we have an American audience.
+        </p>
+        <h1>Troubleshooting</h1>
+        <h3>
+          If you get an error message, don't panic. 
+          Check to make sure you typed every line of code exactly as instructed. Additionally:
+        </h3>
+        <ul>
+          <li>
+            One common error that causes Python code not to run is incorrect indentation. 
+            Make sure if you have a for loop 
+            (a function that uses the word for to tell Python to execute a command repeatedly) 
+            that the following line is indented with tab once. An example is below:
+          </li>
+          <Image
+            src={"/for_loop_example.png"}
+            width={140}
+            height={64}
+            alt="For Loop Example"
+            quality={100}
+            className="Image"
+          />
+          <li>
+            Forgetting to place a colon at the end of a for loop will also cause
+            Python to throw errors. Again, refer to the for loop above.
+          </li>
+          <li>
+            The cells containing code must be run sequentially or certain cells 
+            that depend on the previous cells will not execute the code.
+          </li>
+        </ul>
+        <h1>Conclusion</h1>
+        <p>
+          After you have written and run the last chunk of code, 
+          make sure that there are no errors and that you get the desired results. 
+          You should see a horizontal bar graph comparing favorite Harry Potter characters.
+        </p>
+        <p>
+          Your program is now finished, and you are ready to create bar graphs in Python!
+        </p>
       </div>
     </main>
   );

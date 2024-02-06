@@ -52,9 +52,10 @@ export default function Home() {
         <Image 
           src={"/required_packages.png"}
           width={700}
-          height={95}
+          height={60}
           alt="Required Python Packages"
           quality={100}
+          priority={true}
           className="Image"
         />
         <p>
@@ -89,7 +90,7 @@ export default function Home() {
         <Image
           src={"/df_initialization.png"}
           width={700}
-          height={64}
+          height={40}
           alt="DF Initialization"
           quality={100}
           className="Image"
@@ -106,7 +107,7 @@ export default function Home() {
         <Image
           src="/display_dataframe.png"
           width={700}
-          height={80}
+          height={37}
           alt="Display Dataframe"
           quality={100}
           className="Image"
@@ -117,10 +118,8 @@ export default function Home() {
         <Image
           src={"/df_table.png"}
           width={700}
-          height={150}
+          height={160}
           alt="DF Table"
-          unoptimized
-          priority={true}
           quality={100}
           className="Image"
         />
@@ -137,9 +136,8 @@ export default function Home() {
         <Image
           src={"/percentages_calc.png"}
           width={700}
-          height={150}
+          height={180}
           alt="Percentages Calc"
-          priority={true}
           quality={100}
           className="Image"
         />
@@ -156,9 +154,8 @@ export default function Home() {
         <Image
           src={"/percentages_display.png"}
           width={700}
-          height={170}
+          height={250}
           alt="Percentages Display"
-          priority={true}
           quality={100}
           className="Image"
         />
@@ -169,7 +166,7 @@ export default function Home() {
         <Image
           src={"/plotting_logic.png"}
           width={700}
-          height={100}
+          height={75}
           alt="Plotting Logic"
           quality={100}
           className="Image"
@@ -196,7 +193,7 @@ export default function Home() {
         <Image
           src={"/plt_labeling.png"}
           width={700}
-          height={200}
+          height={280}
           alt="Plot 1"
           priority={true}
           quality={100}
@@ -235,8 +232,8 @@ export default function Home() {
           </li>
           <Image
             src={"/for_loop_example.png"}
-            width={140}
-            height={64}
+            width={300}
+            height={70}
             alt="For Loop Example"
             quality={100}
             className="Image"

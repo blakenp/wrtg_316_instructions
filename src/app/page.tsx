@@ -22,7 +22,7 @@ export default function Home() {
         </ul>
         <h2>Step 1: Create a Code Chunk</h2>
         <p>
-          In Google Colab, click the +Code button in the top left corner to create a code chunk.
+          In Google Colab, <b>click the +Code button in the top left corner to create a code chunk.</b>
           Throughout these instructions, when asked to create
           a code chunk you will click this button.
         </p>
@@ -42,7 +42,7 @@ export default function Home() {
         <h2>Step 2: Import Packages</h2>
         <p>
           In your newly created code chunk, 
-          type the following commands to import the packages we"ll be using.
+          <b> type the following commands</b> to import the packages we"ll be using.
         </p>
         <p className="note">
           Note: In Python, a package is a useful collection of functions that 
